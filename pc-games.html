@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HEKİMOGLU GAME</title>
+    <link rel="stylesheet" href="./css/pc-games.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        overflow-x: hidden;
+      }
+
+      .product {
+        border: 1px solid #ea2e49;
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+        flex: 0 0 calc(33.333% - 20px); /* Üç sütunlu bir düzen için */
+        box-sizing: border-box; /* Kenarlık dahil genişlik ve yükseklik hesaplaması */
+        background-color: transparent;
+      }
+
+      .product img {
+        /* max-width: 100%; */
+        height: 250px;
+        margin-bottom: 10px;
+        width: 400px;
+      }
+
+      .btn-add-to-cart {
+        background-color: #ea2e49;
+        color: white;
+        padding: 8px 16px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-top: 10px;
+        cursor: pointer;
+        border: none;
+        border-radius: 4px;
+      }
+      #sepet {
+        height: 300px;
+        width: 600px;
+        background-color: whitesmoke;
+        border: 1px solid black;
+        position: absolute;
+        z-index: 2;
+        left: 140%;
+        top: 120%;
+        transition: all 0.5s linear;
+        overflow: scroll;
+        overflow-x: hidden;
+        padding: 25px;
+      }
+      .aktif {
+        left: -135% !important;
+      }
+      .navigation-right li {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #ea2e49;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navigation">
+      <div class="navigation-left">
+        <a href="pc-games.html">PC GAMES</a>
+
+        <a href="sale.html">SALE</a>
+        <a href="about.html">ABOUT</a>
+      </div>
+      <div class="navigation-center">
+        <a href="index.html"><img src="images/hekimoglugame.png"" /></a>
+      </div>
+      <div class="navigation-right">
+        <li class="nav-item position-relative">
+          <a class="navbar-brand" href="sepet.html">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="span"></span>
+          </a>
+
+          <a href="kayıtt.html">
+            <button class="login-btn" href="">Login</button>
+          </a>
+          <label>
+            <input class="toggle-checkbox" type="checkbox" />
+            <div id="darkBtn" class="toggle-slot">
+              <div id="darkBtn" class="sun-icon-wrapper">
+                <div
+                  class="iconify sun-icon"
+                  data-icon="feather-sun"
+                  data-inline="false"
+                ></div>
+              </div>
+              <div id="darkBtn" class="toggle-button"></div>
+              <div id="darkBtn" class="moon-icon-wrapper">
+                <div
+                  class="iconify moon-icon"
+                  data-icon="feather-moon"
+                  data-inline="false"
+                ></div>
+              </div>
+            </div>
+          </label>
+        </li>
+      </div>
+    </div>
+    <br /><br /><br />
+    <main style="min-height: 100vh">
+      <div class="container">
+        <div class="row align-items-center justify-content-center g-3"></div>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/c7a7c7ebeb.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/pc-games2.js"></script>
+    <script src="./js/data.js"></script>
+    <script src="./js/pc-games.js"></script>
+  </body>
+</html>

@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.background {
+  background-image: url("/images/pcgames.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.headings {
+  height: 350px;
+  width: 25%;
+  display: inline-block;
+  border: 5px solid black;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 240px;
+  background-color: red;
+}
+.headings h4 {
+  font-family: "Quicksand", sans-serif;
+  color: white;
+}
+.headings h1 {
+  font-size: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "Open Sans", sans-serif;
+}
+.headings h2 {
+  padding-bottom: 20px;
+  font-family: "Quicksand", sans-serif;
+}
+.email {
+  height: 40px;
+  width: 250px;
+  color: #bfbfbf;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.check {
+  font-family: "Quicksand", sans-serif;
+  font-size: 12px;
+}
+.submit {
+  height: 50px;
+  width: 260px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: white;
+  background-color: black;
+  font-family: "Quicksand", sans-serif;
+}
+.submit:hover {
+  background-color: blue;
+}
+
+@media (max-width: 1700px) {
+  .container {
+    padding-bottom: 200px;
+  }
+  .headings {
+    width: 300px;
+    margin-top: 200px;
+    padding-bottom: 10px;
+  }
+
+  .headings h2 {
+    font-size: 15px;
+  }
+
+  .headings h1 {
+    font-size: 40px;
+  }
+  .headings h4 {
+    font-size: 20px;
+  }
+
+  .email {
+    height: 30px;
+    width: 150px;
+  }
+  .submit {
+    height: 30px;
+    width: 150px;
+  }
+}
+
+@media (max-width: 900px) {
+  .headings {
+    width: 200px;
+    margin-top: 80px;
+    padding-bottom: 10px;
+  }
+
+  .headings h2 {
+    font-size: 15px;
+  }
+
+  .headings h1 {
+    font-size: 40px;
+  }
+  .headings h4 {
+    font-size: 20px;
+  }
+
+  .email {
+    height: 30px;
+    width: 150px;
+  }
+  .submit {
+    height: 30px;
+    width: 150px;
+  }
+}
