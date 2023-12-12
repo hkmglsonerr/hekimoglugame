@@ -284,7 +284,7 @@ if (window.location.href == "http://127.0.0.1:5501/pc-games.html") {
     sepetFiyat.textContent = toplamSepetFiyati.toFixed(2) + "$";
 
     const sepetBtn = document.createElement("button");
-    sepetBtn.classList.add("btn", "btn-success", "w-50");
+    sepetBtn.classList.add("btn", "btn-danger", "w-50");
     sepetBtn.textContent =  "Satın Al";
 
     sepetBtn.addEventListener("click", () => {
